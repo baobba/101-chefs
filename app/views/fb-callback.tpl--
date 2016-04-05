@@ -1,0 +1,50 @@
+<?php
+if (!session_id()) {
+    session_start();
+}
+
+require('vendor/autoload.php');
+require('config/config.php');
+
+$fb = new Facebook\Facebook([  
+    'app_id' => '415946768614462',  
+    'app_secret' => 'e0fc77bae6df69a3677d7efc8797dce9',  
+    'default_graph_version' => 'v2.4',  
+]);  
+
+$helper = $fb->getRedirectLoginHelper();  
+
+try {  
+    $accessToken = $helper->getAccessToken();  
+} catch(Facebook\Exceptions\FacebookResponseException $e) {  
+    // When Graph returns an error  
+    echo 'Graph returned an error: ' . $e->getMessage();  
+    exit;  
+} catch(Facebook\Exceptions\FacebookSDKException $e) {  
+    // When validation fails or other local issues  
+    echo 'Facebook SDK returned an error: ' . $e->getMessage();  
+    exit;  
+} 
+
+// Sets the default fallback access token so we don't have to pass it to each request
+$fb->setDefaultAccessToken($accessToken);
+
+try {
+    $response = $fb->get('/me?locale=pt_BR&fields=name,email');
+    $userNode = $response->getGraphUser();
+} catch(Facebook\Exceptions\FacebookResponseException $e) {
+    // When Graph returns an error
+    echo 'Graph returned an error: ' . $e->getMessage();
+    exit;
+} catch(Facebook\Exceptions\FacebookSDKException $e) {
+    // When validation fails or other local issues
+    echo 'Facebook SDK returned an error: ' . $e->getMessage();
+    exit;
+}
+
+$data = array('nome' => $userNode->getName(), 'email' => $userNode->getEmail(), 'fb_id' => $userNode->getId(), 'tipo_login' => 'facebook');
+
+print_r($data);
+
+save('tb_usuarios', $data);
+?>

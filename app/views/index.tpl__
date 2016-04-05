@@ -1,0 +1,61 @@
+<?php include('_header.tpl'); ?>
+
+	<script>
+	jQuery(document).ready(function() {
+
+	});
+	</script>
+</head>
+<body>
+
+	<header>
+		<a href="#" class="logo"><img src="<?= APP_URI_PUBLIC ?>images/logo-white.png" style="max-width:100%; height:auto;" /></a>
+		<div class="menu-header" id="nav">
+			<ul>
+				<li><a href="inscricao">Entrar</a></li>
+				<li><a href="#">Ajuda</a></li>
+				<li><a href="#" class="destaque">Quero ser chef</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<section id="destaque">
+		<div class="box-texto">
+			<h2>Sirva-se a vontade</h2>
+			<h3>Comida caseira para todos!</h3>
+			<a href="#" class="bt-comoFunciona">Como funciona?</a>
+		</div>
+		<div class="bar-busca">
+			<div class="area-input">
+				<form name="form-busca" method="post" action="pag-busca-realizada">
+					<input name="nome_prato" type="text" placeholder="O que deseja comer?">
+					<button type="submit">Buscar</button>
+				</form>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</section>
+    
+	<section id="mais-buscados-home">
+		<h3>Pratos mais buscados</h3>
+		<ul class="lista-pratos">
+			<?php foreach($lista_categorias as $key => $value){ ?>
+				<li>
+					<a href="<?= APP_URI_APP ?>pag-busca-realizada-categoria/<?= $value['categoria_id'] ?>">
+						<div class="img-destaque">
+							<span class="shadow-mask"></span>
+							<img src="<?= APP_URI_PUBLIC ?>images/prato-1.jpg" style="max-width:100%; height:auto;" />
+						</div>
+						<p><?= $value['categoria'] ?></p>
+					</a>
+				</li>
+			<?php } ?>
+			<div class="clear"></div>
+		</ul>
+		<a href="#" class="bt-dicasReceitasCursos">
+			<img src="<?= APP_URI_PUBLIC ?>images/bt-dicasReceitasCursos.jpg" />
+			<p>Dicas, receitas e cursos <br />sobre gastronomia</p>
+		</a>
+	</section>
+    
+<?php include('_footer.tpl'); ?>

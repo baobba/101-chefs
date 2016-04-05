@@ -1,0 +1,135 @@
+[17-Jan-2016 14:49:33 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '101' (T_LNUMBER), expecting identifier (T_STRING) in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 14:50:10 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '101' (T_LNUMBER), expecting identifier (T_STRING) in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 14:50:38 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 14:51:52 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 14:52:33 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 14:53:42 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 14:55:00 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 14:55:13 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 14:56:55 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 14:58:32 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 14:59:20 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 14:59:28 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 14:59:44 America/Sao_Paulo] PHP Fatal error:  Class 'app\Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 15:00:03 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[17-Jan-2016 15:01:40 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Usuarios' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 55
+[18-Jan-2016 12:37:13 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Pratos' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 89
+[18-Jan-2016 14:23:38 America/Sao_Paulo] PHP Fatal error:  Call to a member function save() on a non-object in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 93
+[18-Jan-2016 15:04:44 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$app' (T_VARIABLE) in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 83
+[18-Jan-2016 15:23:08 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '}' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-meus-pratos.tpl on line 68
+[27-Jan-2016 14:55:49 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Usuarios.php on line 105
+[27-Jan-2016 14:56:55 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Usuarios.php on line 108
+[27-Jan-2016 15:06:53 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Chefs\Chefs\Pratos::dados_prato_categorias() in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 130
+[27-Jan-2016 15:10:28 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Chefs\Chefs\Pratos::dados_prato_categorias() in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 130
+[27-Jan-2016 16:35:14 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$array' (T_VARIABLE) in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Pratos.php on line 360
+[28-Jan-2016 10:33:31 America/Sao_Paulo] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 267124736 bytes) in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 168
+[28-Jan-2016 10:33:37 America/Sao_Paulo] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 267124736 bytes) in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 168
+[28-Jan-2016 10:33:56 America/Sao_Paulo] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 267124736 bytes) in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 168
+[28-Jan-2016 10:34:06 America/Sao_Paulo] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 267124736 bytes) in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 168
+[28-Jan-2016 10:35:03 America/Sao_Paulo] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 267124736 bytes) in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 168
+[28-Jan-2016 11:14:34 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$url' (T_VARIABLE) in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 216
+[28-Jan-2016 12:24:06 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Perfil' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 206
+[28-Jan-2016 12:24:26 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Perfil' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 206
+[28-Jan-2016 15:39:31 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'for' (T_FOR) in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Perfil.php on line 64
+[28-Jan-2016 16:06:30 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '<' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-chef.tpl on line 76
+[29-Jan-2016 11:39:42 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Chefs\Chefs\Usuarios::dadosUsuario() in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 237
+[29-Jan-2016 11:43:11 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$array' (T_VARIABLE) in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Perfil.php on line 206
+[29-Jan-2016 14:38:13 America/Sao_Paulo] PHP Fatal error:  Call to undefined function the_permalink() in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-chef.tpl on line 78
+[29-Jan-2016 14:38:45 America/Sao_Paulo] PHP Fatal error:  Call to undefined function the_title() in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-chef.tpl on line 78
+[29-Jan-2016 15:25:39 America/Sao_Paulo] PHP Fatal error:  Call to undefined function the_permalink() in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-prato.tpl on line 97
+[29-Jan-2016 15:26:35 America/Sao_Paulo] PHP Fatal error:  Call to undefined function the_permalink() in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-prato.tpl on line 97
+[29-Jan-2016 15:28:29 America/Sao_Paulo] PHP Fatal error:  Call to undefined function the_permalink() in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-prato.tpl on line 98
+[01-Feb-2016 13:40:33 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$palavrachave' (T_VARIABLE) in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Pratos.php on line 244
+[01-Feb-2016 14:16:26 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Dashboard.php on line 49
+[03-Feb-2016 11:23:34 America/Sao_Paulo] PHP Fatal error:  Call to undefined function Chefs\Chefs\dados_prato_fotos() in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Pratos.php on line 510
+[03-Feb-2016 11:42:50 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Pratos.php on line 503
+[04-Feb-2016 10:46:34 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Pratos.php on line 585
+[04-Feb-2016 12:34:38 America/Sao_Paulo] PHP Fatal error:  Call to a member function lista_categorias() on a non-object in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 131
+[04-Feb-2016 12:34:57 America/Sao_Paulo] PHP Fatal error:  Call to a member function lista_categorias() on a non-object in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 131
+[04-Feb-2016 12:35:06 America/Sao_Paulo] PHP Fatal error:  Call to a member function lista_categorias() on a non-object in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 131
+[04-Feb-2016 12:35:38 America/Sao_Paulo] PHP Fatal error:  Call to a member function lista_categorias() on a non-object in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 131
+[05-Feb-2016 11:00:09 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$app' (T_VARIABLE) in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 14
+[05-Feb-2016 11:52:39 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1130] Host '108.179.253.78' is not allowed to connect to this MySQL server' in /home/baobb416/public_html/101chefs.com.br/app/singleton.php:25
+Stack trace:
+#0 /home/baobb416/public_html/101chefs.com.br/app/singleton.php(25): PDO->__construct('mysql:host=108....', 'baobb416_101che...', '101chefsadmin')
+#1 /home/baobb416/public_html/101chefs.com.br/app/vendor/slim/slim/Slim/Helper/Set.php(228): {closure}(Object(Slim\Helper\Set))
+#2 /home/baobb416/public_html/101chefs.com.br/app/vendor/slim/slim/Slim/Helper/Set.php(88): Slim\Helper\Set->Slim\Helper\{closure}(Object(Slim\Helper\Set))
+#3 /home/baobb416/public_html/101chefs.com.br/app/vendor/slim/slim/Slim/Slim.php(234): Slim\Helper\Set->get('database')
+#4 /home/baobb416/public_html/101chefs.com.br/app/index.php(34): Slim\Slim->__get('database')
+#5 {main}
+  thrown in /home/baobb416/public_html/101chefs.com.br/app/singleton.php on line 25
+[05-Feb-2016 15:52:54 America/Sao_Paulo] PHP Fatal error:  Call to undefined function Chefs\Chefs\sanitizeString() in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Pratos.php on line 160
+[11-Feb-2016 11:20:33 America/Sao_Paulo] PHP Fatal error:  Cannot use [] for reading in /home/baobb416/public_html/101chefs.com.br/app/views/pag-busca-realizada.tpl on line 90
+[16-Feb-2016 13:41:02 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ';' in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 31
+[16-Feb-2016 15:01:49 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Usuarios.php on line 206
+[16-Feb-2016 16:17:38 America/Sao_Paulo] PHP Fatal error:  Call to a member function busca_prato() on a non-object in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 625
+[16-Feb-2016 16:17:59 America/Sao_Paulo] PHP Fatal error:  Call to a member function busca_prato() on a non-object in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 625
+[16-Feb-2016 16:19:13 America/Sao_Paulo] PHP Fatal error:  Call to a member function busca_prato() on a non-object in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 625
+[16-Feb-2016 17:26:18 America/Sao_Paulo] PHP Fatal error:  Class 'PHPMailer' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 156
+[16-Feb-2016 17:31:39 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$valida_email' (T_VARIABLE) in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 152
+[16-Feb-2016 17:32:03 America/Sao_Paulo] PHP Fatal error:  Call to undefined function int() in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 152
+[17-Feb-2016 11:53:17 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ''foto\'] ?>" style="max-width:' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-prato-edit.tpl on line 34
+[23-Feb-2016 15:46:45 America/Sao_Paulo] PHP Fatal error:  Call to a member function render() on a non-object in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 617
+[23-Feb-2016 15:46:47 America/Sao_Paulo] PHP Fatal error:  Call to a member function render() on a non-object in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 617
+[23-Feb-2016 15:46:57 America/Sao_Paulo] PHP Fatal error:  Call to a member function render() on a non-object in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 617
+[25-Feb-2016 14:29:00 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-chef.tpl on line 221
+[25-Feb-2016 14:30:34 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-chef.tpl on line 221
+[25-Feb-2016 15:22:45 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '<' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-chef.tpl on line 222
+[29-Feb-2016 10:48:06 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 136
+[29-Feb-2016 11:02:45 America/Sao_Paulo] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Pratos.php on line 727
+[29-Feb-2016 12:05:28 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '}' in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 611
+[07-Mar-2016 12:11:15 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '}' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 399
+[07-Mar-2016 12:12:07 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 427
+[07-Mar-2016 14:04:41 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 161
+[07-Mar-2016 14:05:17 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 163
+[07-Mar-2016 14:06:22 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 161
+[07-Mar-2016 14:06:33 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 161
+[07-Mar-2016 14:08:08 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 161
+[07-Mar-2016 14:08:11 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 161
+[07-Mar-2016 14:08:11 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 161
+[07-Mar-2016 14:08:12 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 161
+[07-Mar-2016 14:08:12 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 161
+[07-Mar-2016 14:08:13 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 161
+[07-Mar-2016 14:08:58 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /home/baobb416/public_html/101chefs.com.br/app/views/admin/pag-perfil-edit.tpl on line 161
+[07-Mar-2016 15:23:43 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '/' in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 158
+[07-Mar-2016 15:56:36 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 253
+[07-Mar-2016 16:23:36 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:23:36 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:24:54 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:00 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:01 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:02 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:02 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:30 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:30 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:31 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:32 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:33 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:33 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:36 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:37 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:56 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:56 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:58 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:58 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:58 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:25:59 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:26:00 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[07-Mar-2016 16:26:00 America/Sao_Paulo] PHP Fatal error:  Call to undefined function issets() in /home/baobb416/public_html/101chefs.com.br/app/views/_menu.tpl on line 112
+[10-Mar-2016 09:55:17 America/Sao_Paulo] PHP Fatal error:  Call to undefined function dados_perfil() in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 614
+[10-Mar-2016 10:10:43 America/Sao_Paulo] PHP Fatal error:  Call to undefined function qtde_prato_usuario() in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 557
+[14-Mar-2016 14:21:48 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$numero' (T_VARIABLE) in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 715
+[22-Mar-2016 16:14:50 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Chefs\Chefs\Pratos::delete_perfil() in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 1028
+[22-Mar-2016 16:39:07 America/Sao_Paulo] PHP Fatal error:  Call to undefined function Chefs\Chefs\compress_image() in /home/baobb416/public_html/101chefs.com.br/app/lib/Chefs/Chefs/Pratos.php on line 313
+[23-Mar-2016 16:00:19 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$lista_categorias' (T_VARIABLE) in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 704
+[24-Mar-2016 13:52:20 America/Sao_Paulo] PHP Fatal error:  Class 'Chefs\Chefs\Pratos' not found in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php__ on line 559
+[30-Mar-2016 15:04:28 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Chefs\Chefs\Pratos::duplica_prato() in /home/baobb416/public_html/101chefs.com.br/app/controllers/core.php on line 1159
+[01-Apr-2016 18:29:48 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '<' in /home/baobb416/public_html/101chefs.com.br/app/views/landing.tpl on line 4
+[01-Apr-2016 18:29:48 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '<' in /home/baobb416/public_html/101chefs.com.br/app/views/landing.tpl on line 4
+[01-Apr-2016 18:29:48 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '<' in /home/baobb416/public_html/101chefs.com.br/app/views/landing.tpl on line 4
+[01-Apr-2016 18:29:48 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '<' in /home/baobb416/public_html/101chefs.com.br/app/views/landing.tpl on line 4
+[01-Apr-2016 18:29:49 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '<' in /home/baobb416/public_html/101chefs.com.br/app/views/landing.tpl on line 4
+[01-Apr-2016 18:29:49 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '<' in /home/baobb416/public_html/101chefs.com.br/app/views/landing.tpl on line 4
+[01-Apr-2016 18:29:49 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '<' in /home/baobb416/public_html/101chefs.com.br/app/views/landing.tpl on line 4
+[01-Apr-2016 18:29:49 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '<' in /home/baobb416/public_html/101chefs.com.br/app/views/landing.tpl on line 4
+[03-Apr-2016 12:29:17 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '<' in /home/baobb416/public_html/101chefs.com.br/app/views/landing.tpl on line 15

@@ -1,0 +1,211 @@
+<?php include('_header.tpl'); ?>
+
+	<script>
+	jQuery(document).ready(function() {
+		if(jQuery(window).width() > 768){
+			jQuery(window).scroll(function(){
+				var y = jQuery(window).scrollTop();
+				if (y >= 384){
+					jQuery('header').addClass('bg');
+					jQuery('header').addClass('header-fixed');
+					jQuery('header a.logo.l-white').css('display','none');
+					jQuery('header a.logo.l-color').css('display','block');
+					jQuery('header .menu-header ul li a').css('color','#5a5a5a');
+					jQuery('header .menu-header ul li a.destaque').css('color','#ffffff');
+				}else {
+					jQuery('header').removeClass('bg');
+					jQuery('header').removeClass('header-fixed');
+					jQuery('header a.logo.l-white').css('display','block');
+					jQuery('header a.logo.l-color').css('display','none');
+					jQuery('header .menu-header ul li a').css('color','#ffffff');
+				}
+			});
+		}
+		jQuery('a.bt-comoFunciona').click(function(){
+			jQuery(this).parents('body').find('header').addClass('open-comoFunciona');
+			jQuery('#como-funciona').slideDown();
+			return false;
+		});
+		jQuery('a.close-como-funciona').click(function(){
+			jQuery('#como-funciona').slideUp();
+			jQuery(this).parents('body').find('header').delay(100).removeClass('open-comoFunciona');
+		});
+		
+		jQuery('a.show-menu-mobile').click(function(){
+			jQuery(this).toggleClass('open');
+			jQuery(this).children('span:first-child').toggleClass('rot');
+			jQuery(this).children('span:last-child').toggleClass('rot');
+			jQuery(this).next('.menu-header').slideToggle();
+			jQuery('#mask-mobile-hide').toggleClass('open');
+			return false;
+		});
+		jQuery('#mask-mobile-hide').click(function(){
+			jQuery(this).removeClass('open');
+			jQuery('a.show-menu-mobile').removeClass('open');
+			jQuery('a.show-menu-mobile').children('span:first-child').removeClass('rot');
+			jQuery('a.show-menu-mobile').children('span:last-child').removeClass('rot');
+			jQuery(this).next('header').find('.menu-header').slideToggle();
+			return false;
+		});
+		
+	});
+	</script>
+</head>
+<body>
+
+	<div id="como-funciona">
+		<a href="#" class="close-como-funciona"><i class="flaticon-cross"></i></a>
+		<div class="steps">
+			<ul>
+				<li>
+					<div class="ilustra"><img src="<?= APP_URI_PUBLIC ?>images/comoFunciona-101chefs-01.png" style="max-width:100%; height:auto;" /></div>
+					<h4>01 - Cozinhe</h4>
+				</li>
+				<li>
+					<div class="ilustra"><img src="<?= APP_URI_PUBLIC ?>images/comoFunciona-101chefs-02.png" style="max-width:100%; height:auto;" /></div>
+					<h4>02 - Divulgue</h4>
+				</li>
+				<li>
+					<div class="ilustra"><img src="<?= APP_URI_PUBLIC ?>images/comoFunciona-101chefs-03.png" style="max-width:100%; height:auto;" /></div>
+					<h4>03 - Escolha</h4>
+				</li>
+				<li>
+					<div class="ilustra"><img src="<?= APP_URI_PUBLIC ?>images/comoFunciona-101chefs-04.png" style="max-width:100%; height:auto;" /></div>
+					<h4>04 - Saboreie</h4>
+				</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="mask-mobile-hide"></div>
+
+	<header class="index">
+		<a href="<?= APP_URI_APP ?>pag-busca-realizada" class="header-busca-mobile"><i class="flaticon-search100"></i></a>
+		<a href="#" class="logo l-white"><img src="<?= APP_URI_PUBLIC ?>images/logo-white.svg" style="width:100%; height:auto;" /></a>
+		<a href="#" class="logo l-color"><img src="<?= APP_URI_PUBLIC ?>images/logo-color.svg" style="width:100%; height:auto;" /></a>
+		<a href="#" class="show-menu-mobile">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="menu-header" id="nav">
+			<ul>
+				<li><a href="#" class="bt-fazer-login">Entrar</a></li>
+				<li><a href="#">Ajuda</a></li>
+				<li><a href="<?= APP_URI_APP ?>inscricao" class="destaque">Quero cozinhar</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<div class="mask"></div>
+	<div id="box-login"> 
+		<?php
+		$fb = new Facebook\Facebook([
+			'app_id' => FACEBOOK_APP_ID,
+			'app_secret' => FACEBOOK_APP_SECRET,
+			'default_graph_version' => 'v2.4',
+		]);
+
+		$helper = $fb->getRedirectLoginHelper();
+
+		$permissions = ['email']; // Optional permissions
+
+		$loginUrl = $helper->getLoginUrl('http://101chefs.com.br/app/fb_callback', $permissions);
+		?>
+		<p class="acesseConta">Acesse sua conta</p>
+		<a href="<?= $loginUrl ?>" class="bt-login-facebook" onclick="verificaChecks()">Entrar com o facebook</a>
+		<p class="sep"><span>ou</span></p>
+		<form name="form-login" method="post" action="<?= APP_URI_APP ?>login">
+			<input name="login" type="text" placeholder="Seu email">
+			<input name="pass" type="password" placeholder="Sua senha">
+			<button type="submit">Entrar</button>
+		</form>
+		<a href="<?= APP_URI_APP ?>esqueci-senha" class="forgotPass">Esqueci minha senha</a>
+	</div>
+	
+	<section id="destaque">
+		<div class="box-texto">
+			<h2>Sirva-se a vontade</h2>
+			<h3>Comida caseira para todos!</h3>
+			<a href="#" class="bt-comoFunciona">Como funciona?</a>
+		</div>
+		<div class="bar-busca">
+			<div class="area-input">
+				<form name="form-busca" method="post" action="pag-busca-realizada">
+					<input name="nome_prato" type="text" placeholder="O que deseja comer?">
+
+					<select name="prato_categoria[]">
+						<option value="0">Selecione categoria</option>
+						<?php
+						foreach($lista_categorias2 as $keyc => $valuec){
+							
+							$checked = '';
+							if($categorias[$keyc] == $keyc){
+								$checked = 'checked';
+							}
+							
+							?>
+							<option value="<?= $keyc ?>"><?= $valuec ?></option>
+							<?php
+						}
+						?>
+					</select>
+
+					<button type="submit">Buscar</button>
+				</form>
+				<div class="clear"></div>
+			</div>
+			<a href="<?= APP_URI_APP ?>pag-busca-realizada" class="btn-busca-mobile"><i class="flaticon-search100"></i> O que deseja comer?</a>
+		</div>
+	</section>
+	
+	<section id="steps-101chefs">
+		<ul>
+			<li>
+				<div class="img-step"><img src="<?= APP_URI_PUBLIC ?>images/101chefs-step-01.png" style="max-width:100%; height:auto;" /></div>
+				<h4>Faça seu cadastro</h4>
+				<p>Por que não usar sua própria cozinha para aumentar sua renda? O Apptite possibilita que suas receitas sejam divulgadas e compartilhadas por várias pessoas</p>
+			</li>
+			<li>
+				<div class="img-step"><img src="<?= APP_URI_PUBLIC ?>images/101chefs-step-01.png" style="max-width:100%; height:auto;" /></div>
+				<h4>Cozinhe no seu tempo</h4>
+				<p>Por que não usar sua própria cozinha para aumentar sua renda? O Apptite possibilita que suas receitas sejam divulgadas e compartilhadas por várias pessoas</p>
+			</li>
+			<li>
+				<div class="img-step"><img src="<?= APP_URI_PUBLIC ?>images/101chefs-step-01.png" style="max-width:100%; height:auto;" /></div>
+				<h4>Preocupação zero</h4>
+				<p>Por que não usar sua própria cozinha para aumentar sua renda? O Apptite possibilita que suas receitas sejam divulgadas e compartilhadas por várias pessoas</p>
+			</li>
+			<li>
+				<div class="img-step"><img src="<?= APP_URI_PUBLIC ?>images/101chefs-step-01.png" style="max-width:100%; height:auto;" /></div>
+				<h4>Ganhe uma renda extra</h4>
+				<p>Por que não usar sua própria cozinha para aumentar sua renda? O Apptite possibilita que suas receitas sejam divulgadas e compartilhadas por várias pessoas</p>
+			</li>
+			<div class="clear"></div>
+		</ul>
+	</section>
+    
+	<section id="mais-buscados-home">
+		<h3>Pratos mais buscados</h3>
+		<ul class="lista-pratos">
+			<?php foreach($lista_categorias as $key => $value){ ?>
+				<li>
+					<a href="<?= APP_URI_APP ?>pag-busca-realizada-categoria/categoria/<?= $value['categoria_id'] ?>">
+						<div class="img-destaque">
+							<span class="shadow-mask"></span>
+							<img src="<?= APP_URI_PUBLIC ?>images/prato-1.jpg" style="max-width:100%; height:auto;" />
+						</div>
+						<p><?= $value['categoria'] ?></p>
+					</a>
+				</li>
+			<?php } ?>
+			<div class="clear"></div>
+		</ul>
+		<a href="#" class="bt-dicasReceitasCursos">
+			<img src="<?= APP_URI_PUBLIC ?>images/bt-dicasReceitasCursos.jpg" />
+			<p>Dicas, receitas e cursos <br />sobre gastronomia</p>
+		</a>
+	</section>
+    
+<?php include('_footer.tpl'); ?>

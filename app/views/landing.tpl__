@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>101Chefs</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="<?= APP_URI_PUBLIC ?>/landing_res/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?= APP_URI_PUBLIC ?>/landing_res/css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,100,200,400,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+
+  <link rel="stylesheet" href="<?= APP_URI_PUBLIC ?>/landing_res/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= APP_URI_PUBLIC ?>/landing_res/css/main.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+    <script src="<?= APP_URI_PUBLIC ?>js/jquery.bxslider.min.js"></script>
+
+	<script src="<?= APP_URI_PUBLIC ?>js/slippry.min.js"></script>
+	<script src="<?= APP_URI_PUBLIC ?>js/funcoes.js" type="text/javascript"></script>
+	<script src="<?= APP_URI_PUBLIC ?>js/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
+	<script src="<?= APP_URI_PUBLIC ?>js/jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
+
+
+  <script src="<?= APP_URI_PUBLIC ?>/landing_res/js/modernizr-2.7.1.js"></script>
+  	<script>
+	jQuery(document).ready(function() {
+		
+		jQuery('a.bt-fazer-login').click(function(){
+			jQuery('.mask, #box-login').fadeIn();
+		});
+		jQuery('.mask').click(function(){
+			jQuery(this).fadeOut();
+			jQuery('#box-login').fadeOut();
+		});
+		
+	});
+	</script>
+
+</head>
+
+<body> 
+    <header>
+<!--        <div style="top: -10px; width: 100%; height: 100%; position: absolute; background:rgba(0,0,0,0.10);"></div>-->
+        <div class="container">
+            <div class="row header-info-top wow fadeIn" data-wow-delay="0.2s">
+            <div class="col-xs-8">
+                <a href="#"><img src="<?= APP_URI_PUBLIC ?>/landing_res/img/logo.svg" style="width:150px; height:auto;" alt="Logo"></a>
+            </div>
+            <div class="col-xs-4" style="text-align:right;">
+              <a href="#" class="btn btn-101 btn-lg btn-block bt-fazer-login">Já sou 101Chefs!</a>
+            </div>
+            </div>
+            <div class="row header-info">
+                <div class="col-md-8">
+                    <h1 class="wow fadeIn">Comida feita com amor</h1>
+                    <br />
+                    <h2 class="wow fadeIn" data-wow-delay="0.5s">Conectando quem gosta de cozinhar a quem quer comer bem</h2>
+                    <br /> 
+                    <div class="videoWrapper">
+                        <div><iframe width="400" height="250" src="https://www.youtube.com/embed/8RcltZzIAlk" frameborder="0" allowfullscreen class="wow fadeIn video1" data-wow-delay="0.8s"></iframe></div>
+                                               
+                    </div>                    
+                </div>
+                
+
+                <div class="col-md-4 lead wow fadeIn formtop" data-wow-delay="1.0s">
+
+                    <!-- START Login -->
+                    <div class="panel panel-default panel-login">      		
+                      <div class="login-form">
+                            <div class="form-group">
+<!--                            <button type="submit" class="btn btn-101 btn-lg btn-block" id="buttonSignIn" data-wait="Por favor, aguarde ..." style="margin-bottom:30px">Já tenho uma conta</button>  -->
+                                <p class="text-center">QUERO SER 101Chefs</p>
+                                <div class="insc-face">
+                                <div id="erro" style="display: none;">
+                                    Preencha os campos solicitados.
+                                </div>
+                                <form>
+                                <a href="https://www.facebook.com/v2.4/dialog/oauth?client_id=415946768614462&amp;state=1a298542d1558e6b752e347c07dc0539&amp;response_type=code&amp;sdk=php-sdk-5.0.0&amp;redirect_uri=http%3A%2F%2F101chefs.com.br%2Fapp%2Ffb_callback&amp;scope=public_profile%2Cemail" class="btn btn-face btn-lg btn-block">Inscrever-se com o facebook</a> 
+                                </form>
+                            </div>
+                                <br>
+                            <div class="sep">
+                                <span class="line"></span>
+                                <p class="text-center">ou</p>
+                                <span class="line"></span>
+                            </div>
+                                <br>
+                            <div class="insc-form">
+                                <p class="text-center">Inscrever-se com seu e-mail</p>
+                                <form name="form-site" method="post" action="http://101chefs.com.br/cadastro_site">
+                                    <ul>    
+                                        <li><input name="nome" type="text" placeholder="Nome" required=""></li>
+                                        <li><input name="email" id="email" type="text" placeholder="E-mail" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></li>
+                                        <li><input name="email2" type="text" placeholder="Confirmar E-mail" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><span class="msg"></span></li>
+                                        <li><input name="senha" type="password" placeholder="Senha" required=""></li>
+                                    </ul>
+                                    <button type="submit" id="salvar" class="btn btn-block btn-lg btn-success">Inscrever-se</button> 
+                                </form>
+                            </div>
+                                 
+                            <label>
+                                <div class="aviso-politica-termos">
+                                    <p><small>Ao continuar e enviar meus dados, eu concordo com os <a href="http://101chefs.com.br/termos-servico"><b><u>Termos de Serviços</u></b></a> e a <a href="http://101chefs.com.br/politicas-privacidade"><b><u>Política de Privacidade</u></b></a>. 
+<!--                                        e que o 101Chefs e seus representantes podem entrar em contato comigo por e-mail, telefone, SMS e aplicativos de bate-papo, no endereço de e-mail ou número que eu forneci, incluindo para finalidades de marketing.-->
+                                        </small></p>
+                                </div>
+                            </label>
+                            </div>		
+                       </div>
+                    </div>
+                    <!-- END Login -->
+                                  
+                </div>                
+          </div>
+        </div>
+        
+        
+    <section class="comoFunciona" id="comofunciona">
+        <div class="container" style="text-align:center;">
+		<div class="row">
+			<h2 class="title-box">Como funciona</h2>
+			<div class="col-md-6">
+				<span class="img-ilustra"><img src="http://101chefs.com.br/public/images/cena-02.jpg"></span>
+				<div class="area-text">
+					<p>Quem adora cozinhar, e quer vender suas especialidades, posta seus pratos no 101Chefs, que é a vitrine online de quem empreende na cozinha.</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<span class="img-ilustra"><img src="http://101chefs.com.br/public/images/cena-03.jpg"></span>
+				<div class="area-text">
+					<p>Quem quer comida saborosa e não industrializada encontra aqui e combina com o chef os detalhes, o pagamento e a entrega ou retirada do pedido.</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+            <div class="row">
+                <hr>
+            </div>
+		<div class="row">
+			<h2 class="title-box">Quero vender </h2>
+			<div class="col col-25">
+				<span class="img-ilustra"><img src="http://101chefs.com.br/public/images/cena-01.jpg"></span>
+			</div>
+			<div class="col col-75">
+				<div class="area-text">
+					<p><b>Veja as vantagens</b> de se cadastrar no 101Chefs:</p>
+                    <p>&nbsp;</p>
+					<ul style="text-align:justify;">
+						<li><p>Você pode fazer uma renda extra e viver de sua paixão pela comida, fazendo tudo do seu jeito e no seu tempo.</p></li>
+						<li><p>Você amplia sua clientela pois estará conectado a novos clientes possíveis desde o primeiro momento.</p></li>
+						<li><p>Você compartilha o que faz de melhor e o 101Chefs vai ajudar você na divulgação, e com dicas de preparo, embalagem, e melhores práticas.</p></li>
+						<li><p>Você terá sua vitrine online e poderá construir uma base de clientes frequentes e fiéis.</p></li>
+						<li><p>O 101Chefs está construindo todas as ferramentas para facilitar cada vez mais a experiência do pedido, a cobrança e o atendimento. Sua única preocupação é com o que ama fazer, que é cozinhar.</p></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+        </div>
+	</section>
+        
+        <div class="mask"></div>
+	<div id="box-login"> 
+		<?php
+		$fb = new Facebook\Facebook([
+			'app_id' => FACEBOOK_APP_ID,
+			'app_secret' => FACEBOOK_APP_SECRET,
+			'default_graph_version' => 'v2.4',
+		]);
+
+		$helper = $fb->getRedirectLoginHelper();
+
+		$permissions = ['public_profile', 'email'];
+
+		$loginUrl = $helper->getLoginUrl('http://101chefs.com.br/app/fb_callback', $permissions);
+		?>
+		<p class="acesseConta">Acesse sua conta</p>
+		<a href="<?= $loginUrl ?>" class="bt-login-facebook" onclick="verificaChecks()">Entrar com o facebook</a>
+		<p class="sep"><span>ou</span></p>
+		<form name="form-login" method="post" action="<?= APP_URI_APP ?>login">
+			<input name="login" type="text" placeholder="Seu email/usuário">
+			<input name="pass" type="password" placeholder="Sua senha">
+			<button type="submit">Entrar</button>
+		</form>
+		<a href="<?= APP_URI_APP ?>esqueci-senha" class="forgotPass">Esqueci minha senha</a>
+		<a href="<?= APP_URI_APP ?>" class="forgotPass">Ainda não sou cadastrado</a>
+	</div>
+        
+    </header>
+    
+    
+    
+    <footer>
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-sm-3">
+            <ul class="list-inline social">
+              <li>Siga nos</li>
+              <li><a href="https://www.facebook.com/101chefs"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/101chefs/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          
+          <div class="col-sm-9 copyright">
+            <ul class="list-inline">
+              <li>Copyright &copy; 2016 - Todos os direitos reservados.</li>
+              <li>Desenvolvido por <a href="http://baobbalab.com">Baobba</a></li>
+            </ul>	            
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+    
+    
+    <!-- Javascript
+    ================================================== -->
+    
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="<?= APP_URI_PUBLIC ?>/landing_res/js/wow.min.js"></script>
+    <script src="<?= APP_URI_PUBLIC ?>/landing_res/js/bootstrap.min.js"></script>
+    <script src="<?= APP_URI_PUBLIC ?>/landing_res/js/main.js"></script>
+    
+
+   
+    </body>
+</html>

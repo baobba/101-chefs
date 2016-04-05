@@ -1,0 +1,13 @@
+[25-Feb-2016 11:58:06 America/Chicago] PHP Fatal error:  Call to undefined function imagecolorallocatea() in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 20
+[25-Feb-2016 11:58:07 America/Chicago] PHP Fatal error:  Call to undefined function imagecolorallocatea() in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 20
+[25-Feb-2016 13:44:00 America/Chicago] PHP Warning:  imagecropauto() expects parameter 1 to be resource, array given in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 31
+[25-Feb-2016 13:44:00 America/Chicago] PHP Warning:  imagecropauto() expects parameter 1 to be resource, array given in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 31
+[25-Feb-2016 13:44:00 America/Chicago] PHP Warning:  imagecropauto() expects parameter 1 to be resource, array given in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 31
+[25-Feb-2016 13:44:31 America/Chicago] PHP Warning:  imagecropauto() expects parameter 1 to be resource, array given in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 31
+[25-Feb-2016 13:44:31 America/Chicago] PHP Warning:  imagecropauto() expects parameter 1 to be resource, array given in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 31
+[25-Feb-2016 13:44:31 America/Chicago] PHP Warning:  imagecropauto() expects parameter 1 to be resource, array given in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 31
+[25-Feb-2016 13:46:22 America/Chicago] PHP Warning:  imagecropauto() expects parameter 1 to be resource, boolean given in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 34
+[25-Feb-2016 13:46:22 America/Chicago] PHP Warning:  imagecropauto() expects parameter 1 to be resource, boolean given in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 34
+[25-Feb-2016 13:46:22 America/Chicago] PHP Warning:  imagecropauto() expects parameter 1 to be resource, boolean given in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 34
+[25-Feb-2016 13:46:46 America/Chicago] PHP Warning:  imagecropauto() expects parameter 1 to be resource, boolean given in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 34
+[25-Feb-2016 13:46:46 America/Chicago] PHP Warning:  imagecropauto() expects parameter 1 to be resource, boolean given in /home/baobb416/public_html/101chefs.com.br/app/public/txt2img/txt2img.php on line 34

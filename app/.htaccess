@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule !\.(js|ico|gif|jpg|png|css|htm|html|eot|woff|svg|ttf)$ index.php
+
+#Redireciona chamadas para pastas internas do sistema
+RewriteRule   ^/?css(.*)  /public/css/$1
+RewriteRule   ^/?fonts(.*)  /public/fonts/$1
+RewriteRule   ^/?images(.*)  /public/images/$1
+RewriteRule   ^/?js(.*)  /public/js/$1
+
+
+#Habilitar o PHP 5.5
+AddHandler application/x-httpd-php55 .php
